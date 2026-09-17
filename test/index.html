@@ -1,23 +1,31 @@
 <!doctype html>
 <html lang="en" style="background: #202020">
 <head>
-  <script async src="https://cdn.fuseplatform.net/publift/tags/2/4330/fuse.js"></script>
-
   <script>
-    // Get an initialisation-safe reference to the Fuse Queue
-    const fusetag = window.fusetag || (window.fusetag = { que: [] });
 
-    fusetag.que.push(function() {
-      fusetag.pageInit({
-        blockingFuseIds: [
-          'vrec_lhs',
-          'vrec_rhs',
-          'mobile_leaderboard'
-        ],
+    const publiftScript0 = document.createElement("script");
+    publiftScript0.src = "https://cdn.fuseplatform.net/publift/tags/2/4330/fuse.js";
+    publiftScript0.async = true;
 
-        pageTargets: []
-      });
-    });
+    const publiftScript1 = document.createElement("script");
+    publiftScript1.innerHTML = "" +
+            "    const fusetag = window.fusetag || (window.fusetag = { que: [] });\n" +
+            "\n" +
+            "      fusetag.que.push(function() {\n" +
+            "        fusetag.pageInit({\n" +
+            "          blockingFuseIds: [\n" +
+            "            'vrec_lhs',\n" +
+            "            'vrec_rhs',\n" +
+            "            'mobile_leaderboard'\n" +
+            "          ],\n" +
+            "\n" +
+            "          pageTargets: []\n" +
+            "        });\n" +
+            "      });"
+
+    document.head.appendChild(publiftScript0);
+    document.head.appendChild(publiftScript1);
+
   </script>
 
   <!-- Google tag (gtag.js) -->
