@@ -2,29 +2,48 @@
 <html lang="en" style="background: #202020">
 <head>
   <script>
+    // Randomly select a branch for the split test
 
-    const publiftScript0 = document.createElement("script");
-    publiftScript0.src = "https://cdn.fuseplatform.net/publift/tags/2/4330/fuse.js";
-    publiftScript0.async = true;
+    const adProvider = ["ezoic", "publift"][Math.trunc(Math.random() * 2)]
 
-    const publiftScript1 = document.createElement("script");
-    publiftScript1.innerHTML = "" +
-            "    const fusetag = window.fusetag || (window.fusetag = { que: [] });\n" +
-            "\n" +
-            "      fusetag.que.push(function() {\n" +
-            "        fusetag.pageInit({\n" +
-            "          blockingFuseIds: [\n" +
-            "            'vrec_lhs',\n" +
-            "            'vrec_rhs',\n" +
-            "            'mobile_leaderboard'\n" +
-            "          ],\n" +
-            "\n" +
-            "          pageTargets: []\n" +
-            "        });\n" +
-            "      });"
+    console.log("Setting adProvider in header: " + adProvider)
+    sessionStorage.setItem('adProvider', adProvider);
 
-    document.head.appendChild(publiftScript0);
-    document.head.appendChild(publiftScript1);
+    // Set up any header script tags required by the provider
+
+    switch (adProvider) {
+      case "ezoic":
+        // Shouldn't need anything here if the react sdk does its job
+
+        break;
+      case "publift":
+
+        const publiftScript0 = document.createElement("script");
+        publiftScript0.src = "https://cdn.fuseplatform.net/publift/tags/2/4330/fuse.js";
+        publiftScript0.async = true;
+
+        const publiftScript1 = document.createElement("script");
+        publiftScript1.innerHTML = "" +
+                "// Get an initialisation-safe reference to the Fuse Queue\n" +
+                "    const fusetag = window.fusetag || (window.fusetag = { que: [] });\n" +
+                "\n" +
+                "    fusetag.que.push(function() {\n" +
+                "      fusetag.pageInit({\n" +
+                "        blockingFuseIds: [\n" +
+                "          'vrec_lhs',\n" +
+                "          'vrec_rhs',\n" +
+                "          'mobile_leaderboard'\n" +
+                "        ],\n" +
+                "\n" +
+                "        pageTargets: []\n" +
+                "      });\n" +
+                "    });";
+
+        document.head.appendChild(publiftScript0);
+        document.head.appendChild(publiftScript1);
+
+        break;
+    }
 
   </script>
 
@@ -44,8 +63,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The game where you turn words into poop! New game every day. Can you find the shortest path?" />
   <title>Poople - The Official Daily Word Game</title>
-  <script type="module" crossorigin src="/assets/index-Bh9gs7cc.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-kIPy7sxc.css">
+  <script type="module" crossorigin src="/assets/index-B489dqNG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BEQwP35d.css">
 </head>
 <body>
 <div id="root"></div>
