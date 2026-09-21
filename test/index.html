@@ -5,7 +5,7 @@
     // Randomly select a branch for the split test
 
     const adProvider = ["ezoic", "publift"][Math.trunc(Math.random() * 2)]
-
+    
     if (!sessionStorage.getItem('adProvider')) {
       // If not set
       console.log("Setting adProvider in header: " + adProvider)
