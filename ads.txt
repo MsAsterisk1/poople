@@ -1006,6 +1006,7 @@ ownerdomain=poople.io
 contact=directsales@ezoic.com
 managerdomain=ezoic.ai
 
+ezoic.ai, f5fc68061a50cc67cd8374c2d0664ce1, DIRECT
 ezoic.ai, eb6627f142bcc24a41b258d8ee01bf55, DIRECT
 # 35
 google.com, pub-6644558441501035, DIRECT, f08c47fec0942fa0
