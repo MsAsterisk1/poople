@@ -1137,3 +1137,5 @@ minutemedia.com, 01gr0wzsf8g0, DIRECT
 appnexus.com, 8381, RESELLER
 openx.com, 540780517, RESELLER, 6a698e2ec38604c6
 sonobi.com, 37fbaf262c, RESELLER, d1a215d9eb5aee9e
+
+openx.com, 611873649, DIRECT, 6a698e2ec38604c6
