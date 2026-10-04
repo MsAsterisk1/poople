@@ -1057,6 +1057,11 @@ appnexus.com, 8381, RESELLER
 openx.com, 540780517, RESELLER, 6a698e2ec38604c6
 sonobi.com, 37fbaf262c, RESELLER, d1a215d9eb5aee9e
 rubiconproject.com, 17598, RESELLER, 0bfd66d529a55807
+iion.io, 10307, DIRECT
+pubmatic.com, 164778, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 25322, RESELLER, 0bfd66d529a55807
+appnexus.com, 14538, RESELLER, f5ab79cb980f11d1
+themediagrid.com, 25XPU9, RESELLER
 # 11290
 sharethrough.com, a6a34444, RESELLER, d53b998a7bd4ecd2
 openx.com, 559680764, RESELLER, 6a698e2ec38604c6
