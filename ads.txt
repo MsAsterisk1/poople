@@ -1077,8 +1077,6 @@ onlinemediasolutions.com, 20305, DIRECT
 # 11296
 themediagrid.com, GODNC4, RESELLER, 9fac4a4a87c2a44f
 triplelift.com, 9733, DIRECT, 6c33edb13117fd86
-# 11297
-teads.tv, 13877, DIRECT, 15a9c44f6d26cbe1
 # 11307
 media.net, 8CUPV1T76, DIRECT
 media.net, 8CAY8R66J, DIRECT
