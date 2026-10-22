@@ -1024,6 +1024,7 @@ pubmatic.com, 164778, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 25322, RESELLER, 0bfd66d529a55807
 appnexus.com, 14538, RESELLER, f5ab79cb980f11d1
 themediagrid.com, 25XPU9, RESELLER
+risecodes.com, 608fee2f84a3a300011acd3f, DIRECT
 # 11290
 sharethrough.com, a6a34444, RESELLER, d53b998a7bd4ecd2
 openx.com, 559680764, RESELLER, 6a698e2ec38604c6
@@ -1068,8 +1069,6 @@ contextweb.com, 561118, RESELLER, 89ff185a4c4e857c
 rubiconproject.com, 17070, RESELLER, 0bfd66d529a55807
 # 11321
 33across.com, 0010b00002MpnPqAAJ, DIRECT, bbea06d9c4d2853c
-# 11325
-risecodes.com, 608fee2f84a3a300011acd3f, DIRECT
 # 11335
 sharethrough.com, 4503-OB, RESELLER, d53b998a7bd4ecd2
 sharethrough.com, 4503, RESELLER, d53b998a7bd4ecd2
