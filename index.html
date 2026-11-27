@@ -329,7 +329,8 @@
     <script>
       // Randomly select a branch for the split test
 
-      const adProvider = sessionStorage.getItem('adProvider') ?? ["ezoic", "publift"][Math.trunc(Math.random() * 2)]
+      // const adProvider = sessionStorage.getItem('adProvider') ?? ["ezoic", "publift"][Math.trunc(Math.random() * 2)]
+      const adProvider = "publift"
       
       sessionStorage.setItem('adProvider', adProvider);
 
@@ -380,9 +381,9 @@
 
       gtag('config', 'G-SBM3PJ5HJN');
 
-      gtag('event', 'experience_impression', {
-        exp_variant_string: "Ad-Provider-Test-" + sessionStorage.getItem('adProvider'),
-      });
+      // gtag('event', 'experience_impression', {
+      //   exp_variant_string: "Ad-Provider-Test-" + sessionStorage.getItem('adProvider'),
+      // });
     </script>
 
     <meta charset="UTF-8" />
